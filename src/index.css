@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  :root {
+    --bg-app: #F8FAFC;
+    --panel-bg: #FFFFFF;
+    --accent-blue: #3b82f6;
+    --accent-blue-hover: #1d4ed8;
+    --border-subtle: #e2e8f0;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --text-muted: #94a3b8;
+  }
+
+  body {
+    background-color: var(--bg-app);
+    color: var(--text-primary);
+    overflow: hidden;
+  }
+}
+
+/* Minimalism Blueprint grid background */
+.blueprint-bg {
+  background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.blueprint-bg-small {
+  background-image: radial-gradient(#cbd5e1 0.5px, transparent 0.5px);
+  background-size: 10px 10px;
+}
+
+.active-tool {
+  border-left: 3px solid var(--accent-blue);
+  background-color: #eff6ff;
+  color: var(--accent-blue-hover) !important;
+}
